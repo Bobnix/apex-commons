@@ -13,27 +13,8 @@
 * ============================================================
 */
 
-public class StringBuilder {
-
-	private List<Object> segments = new List<Object>();
-
-	public StringBuilder() {}
-
-	public StringBuilder(Object value) {
-		segments.add(value);
-	}
-
-	public StringBuilder append(List<Object> value){
-		segments.addAll(value);
-		return this;
-	}
-
-	public StringBuilder append(Object value){
-		segments.add(value);
-		return this;
-	}
-
-	public override String toString(){
-		return String.join(segments, '');
+public with sharing class EmailUtil {
+	public EmailUtil() {
+		
 	}
 }
