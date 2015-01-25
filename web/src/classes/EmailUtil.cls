@@ -13,8 +13,23 @@
 * ============================================================
 */
 
+/**
+ * This class provides a number of utility methods to help with emails
+ */
 public with sharing class EmailUtil {
-	public EmailUtil() {
-		
+
+	/**
+	 * Validates a string to see if it is an email address. The validation is very
+	 * open ended, checking if there is charecters, an @, more charecters, a period,
+	 * and a final set of charecters
+	 * 
+	 * @param	address	The string being tested
+	 * @return	True if the email matches the pattern, false if it doesn't
+	 */
+	public static Boolean validateEmailAddress(String address){
+		String emailRegex = '^.+@.+\\..+$';
+		Pattern MyPattern = Pattern.compile(emailRegex);
+		Matcher MyMatcher = MyPattern.matcher(address);
+		return MyMatcher.matches();
 	}
 }
