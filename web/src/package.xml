@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-        <members>EmailUtil</members>
-        <members>EmailUtilTest</members>
+		<members>EmailUtil</members>
+		<members>EmailUtilTest</members>
+		<members>ParameterUtil</members>
+		<members>ParameterUtilTest</members>
+		<members>RequiredParameterException</members>
 		<name>ApexClass</name>
 	</types>
 	<version>31.0</version>
