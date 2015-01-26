@@ -6,6 +6,8 @@
 		<members>ParameterUtil</members>
 		<members>ParameterUtilTest</members>
 		<members>RequiredParameterException</members>
+		<members>XMLSerializer</members>
+		<members>XMLSerializerTest</members>
 		<name>ApexClass</name>
 	</types>
 	<version>31.0</version>
