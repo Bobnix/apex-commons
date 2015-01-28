@@ -13,26 +13,49 @@
 * ============================================================
 */
 
+/**
+ * A simple, clean way to build strings
+ */
 public class StringBuilder {
 
 	private List<Object> segments = new List<Object>();
 
+	/**
+	 * Constructs a new, empty StringBuilder
+	 */
 	public StringBuilder() {}
 
+	/**
+	 * Constructs a new StringBuilder with the given initial value
+	 */
 	public StringBuilder(Object value) {
 		segments.add(value);
 	}
 
-	public StringBuilder append(List<Object> value){
-		segments.addAll(value);
+	/**
+	 * Appends a list of values onto the string
+	 * @param	values	The values to be added
+	 * @return	Returns the StringBuilder to allow for chains
+	 */
+	public StringBuilder append(List<Object> values){
+		segments.addAll(values);
 		return this;
 	}
 
+	/**
+	 * Appends a value onto the string
+	 * @param	value	The value to be added
+	 * @return	Returns the StringBuilder to allow for chains
+	 */
 	public StringBuilder append(Object value){
 		segments.add(value);
 		return this;
 	}
 
+	/**
+	 * Creates a standard String from the StringBuilder
+	 * @return	The string constructed from the apppends
+	 */
 	public override String toString(){
 		return String.join(segments, '');
 	}
