@@ -14,15 +14,15 @@
 */
 
 /**
- * An interface to allow the implementer to set up comparisons between objects
+ * @description An interface to allow the implementer to set up comparisons between objects
  */
 public interface Comparator {
 
 	/**
-	 * Compares two values.
-	 * @param	a	The first value to compare
-	 * @param	b	The second value to compare
-	 * @return	A positive is a is greater than b, a negative if a is less than b
+	 * @description Compares two values.
+	 * @param	a The first value to compare
+	 * @param	b The second value to compare
+	 * @return	A positive if a is greater than b, a negative if a is less than b
 	 *          or 0 if the two values are equal
 	 */
 	Integer compare(Object a, Object b);

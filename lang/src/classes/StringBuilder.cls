@@ -14,27 +14,28 @@
 */
 
 /**
- * A simple, clean way to build strings
+ * @description A simple, clean way to build strings
  */
 public class StringBuilder {
 
 	private List<Object> segments = new List<Object>();
 
 	/**
-	 * Constructs a new, empty StringBuilder
+	 * @description Constructs a new, empty StringBuilder
 	 */
 	public StringBuilder() {}
 
 	/**
-	 * Constructs a new StringBuilder with the given initial value
+	 * @description Constructs a new StringBuilder with the given initial value
+	 * @param	value An initial value to start the StringBuilder with
 	 */
 	public StringBuilder(Object value) {
 		segments.add(value);
 	}
 
 	/**
-	 * Appends a list of values onto the string
-	 * @param	values	The values to be added
+	 * @description Appends a list of values onto the string
+	 * @param	values The values to be added
 	 * @return	Returns the StringBuilder to allow for chains
 	 */
 	public StringBuilder append(List<Object> values){
@@ -43,8 +44,8 @@ public class StringBuilder {
 	}
 
 	/**
-	 * Appends a value onto the string
-	 * @param	value	The value to be added
+	 * @description Appends a value onto the string
+	 * @param	value The value to be added
 	 * @return	Returns the StringBuilder to allow for chains
 	 */
 	public StringBuilder append(Object value){
@@ -53,7 +54,7 @@ public class StringBuilder {
 	}
 
 	/**
-	 * Creates a standard String from the StringBuilder
+	 * @description Creates a standard String from the StringBuilder
 	 * @return	The string constructed from the apppends
 	 */
 	public override String toString(){

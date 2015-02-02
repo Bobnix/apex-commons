@@ -14,17 +14,17 @@
 */
 
 /**
- * A general utility class for helping with lists
+ * @description A general utility class for helping with lists
  */
 public class ListUtils {
 
 	/**
-	 * Sorts a list of objects based on the comparator passed in. Apex has a native
-	 * sort for primatives, SObjects and Objects that implement the comparable
-	 * interface but this gives much more controll by allowing a number of different
-	 * comparators to be written and used.
-	 * @param	objects	The list to be sorted
-	 * @param	comp	The comparator to sort with
+	 * @description Sorts a list of objects based on the comparator passed in. Apex has a native
+	 * 				sort for primatives, SObjects and Objects that implement the comparable
+	 * 				interface but this gives much more controll by allowing a number of different
+	 * 				comparators to be written and used.
+	 * @param	objects The list to be sorted
+	 * @param	comp The comparator to sort with
 	 * @return	A new list with the sorted values.
 	 */
 	public static List<Object> sort(List<Object> objects, Comparator comp){
