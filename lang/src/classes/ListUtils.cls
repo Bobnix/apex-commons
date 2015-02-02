@@ -23,8 +23,8 @@ public class ListUtils {
 	 * 				sort for primatives, SObjects and Objects that implement the comparable
 	 * 				interface but this gives much more controll by allowing a number of different
 	 * 				comparators to be written and used.
-	 * @param	objects The list to be sorted
-	 * @param	comp The comparator to sort with
+	 * @param	objects 	The list to be sorted
+	 * @param	comp 		The comparator to sort with
 	 * @return	A new list with the sorted values.
 	 */
 	public static List<Object> sort(List<Object> objects, Comparator comp){

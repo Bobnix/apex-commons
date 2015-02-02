@@ -19,14 +19,11 @@
 public class XMLSerializer {
 
 	/**
-	 * Serializes the object to an xml string. 
-	 * Current issues:
-	 * <ul>
-	 * 	<li>This method relies on recursion so oject depth should be kept low</li>
-	 * 	<li>Because Apex does not have native reflection, this method is a bit roundabout</li>
-	 * </ul>
+	 * @description Serializes the object to an xml string. 
+	 *              Current issues: (1)This method relies on recursion so oject depth should be kept low
+	 *              (2)Because Apex does not have native reflection, this method is a bit roundabout
 	 * 
-	 * @param	obj		The object being converted
+	 * @param	obj 	The object being converted
 	 * @return	The XML as a string
 	 */
 	public static String serialize(Object obj){

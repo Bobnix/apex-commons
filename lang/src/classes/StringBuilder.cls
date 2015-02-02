@@ -27,7 +27,7 @@ public class StringBuilder {
 
 	/**
 	 * @description Constructs a new StringBuilder with the given initial value
-	 * @param	value An initial value to start the StringBuilder with
+	 * @param	value 	An initial value to start the StringBuilder with
 	 */
 	public StringBuilder(Object value) {
 		segments.add(value);
@@ -35,7 +35,7 @@ public class StringBuilder {
 
 	/**
 	 * @description Appends a list of values onto the string
-	 * @param	values The values to be added
+	 * @param	values 	The values to be added
 	 * @return	Returns the StringBuilder to allow for chains
 	 */
 	public StringBuilder append(List<Object> values){
@@ -45,7 +45,7 @@ public class StringBuilder {
 
 	/**
 	 * @description Appends a value onto the string
-	 * @param	value The value to be added
+	 * @param	value 	The value to be added
 	 * @return	Returns the StringBuilder to allow for chains
 	 */
 	public StringBuilder append(Object value){

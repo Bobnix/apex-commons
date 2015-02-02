@@ -14,16 +14,16 @@
 */
 
 /**
- * This class provides a number of utility methods to help with emails
+ * @description This class provides a number of utility methods to help with emails
  */
-public with sharing class EmailUtil {
+public class EmailUtil {
 
 	/**
-	 * Validates a string to see if it is an email address. The validation is very
-	 * open ended, checking if there is charecters, an @, more charecters, a period,
-	 * and a final set of charecters
+	 * @description Validates a string to see if it is an email address. The validation is very
+	 *              open ended, checking if there is charecters, an @, more charecters, a period,
+	 *              and a final set of charecters
 	 * 
-	 * @param	address	The string being tested
+	 * @param	address 	The string being tested
 	 * @return	True if the email matches the pattern, false if it doesn't
 	 */
 	public static Boolean validateEmailAddress(String address){

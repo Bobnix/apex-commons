@@ -14,14 +14,14 @@
 */
 
 /**
- * This class provides methods to simplify parameter retrieval
+ * @description This class provides methods to simplify parameter retrieval
  */
 public class ParameterUtil {
 	private static final String errorStringFormat = 'Parameter required but not found: {0}';
 
 	/**
-	 * Gets a parameter value for the current page
-	 * @param	parameterName	The name of the prameter to retrieve the value for
+	 * @description Gets a parameter value for the current page
+	 * @param	parameterName 	The name of the prameter to retrieve the value for
 	 * @return	The value of the parameter or null if not found
 	 */
 	public static String get(String parameterName){
@@ -29,9 +29,9 @@ public class ParameterUtil {
 	}
 
 	/**
-	 * Gets a parameter value for the current page
-	 * @param	parameterName	The name of the prameter to retrieve the value for
-	 * @param	defaultValue	A default value to return ig the parameter is not found
+	 * @description Gets a parameter value for the current page
+	 * @param	parameterName 	The name of the prameter to retrieve the value for
+	 * @param	defaultValue 	A default value to return ig the parameter is not found
 	 * @return	The value of the parameter or the default value if not found
 	 */
 	public static String get(String parameterName, String defaultValue){
@@ -40,8 +40,8 @@ public class ParameterUtil {
 	}
 
 	/**
-	 * Gets a parameter value for the current page
-	 * @param	parameterName	The name of the prameter to retrieve the value for
+	 * @description Gets a parameter value for the current page
+	 * @param	parameterName 	The name of the prameter to retrieve the value for
 	 * @return	The value of the parameter
 	 * @throw	RequiredParameterException	Thrown if the parameter is not fount
 	 */
